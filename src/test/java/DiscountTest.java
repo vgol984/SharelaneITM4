@@ -23,7 +23,7 @@ public class DiscountTest {
         driver.findElement(By.cssSelector("[value=Update]"));
         softAssert.assertEquals(driver.findElement(By.xpath("/html/body/center/table/tbody/tr[5]/td/table/tbody/tr[2]/td[5]/p/b")).getText(), "2");
         softAssert.assertEquals(driver.findElement(By.xpath("/html/body/center/table/tbody/tr[5]/td/table/tbody/tr[2]/td[6]")).getText(), "4.0");
-        softAssert.assertEquals(driver.findElement(By.xpath("/html/body/center/table/tbody/tr[6]/td/table/tbody/tr[2]/td[7]")).getText(), "196.00");
+        softAssert.assertEquals(driver.findElement(By.xpath("/html/body/center/table/tbody/tr[5]/td/table/tbody/tr[2]/td[7]")).getText(), "196.00");
         driver.quit();
         softAssert.assertAll();
     }
